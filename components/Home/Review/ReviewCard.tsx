@@ -20,7 +20,7 @@ const ReviewCard = ({ image, name, role, testimonial }: Props) => {
             {testimonial}
           </p>
 
-          <div className="flex items-center mt-6" aria-label="Calificación de 5 estrellas">
+          <div className="flex items-center mt-6">
             {[...Array(5)].map((_, i) => (
               <FaStar key={i} className="text-yellow-600 h-6 w-6" />
             ))}

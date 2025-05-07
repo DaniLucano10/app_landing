@@ -10,10 +10,11 @@ const font = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "LideraTec | Tu compañero digital para un espacio de trabajo eficiente",
+  title:
+    "LideraTec | Tu compañero digital para un espacio de trabajo eficiente",
   description:
     "LideraTec es tu solución integral para maximizar la productividad diaria. Descarga la app y transforma tu forma de trabajar con herramientas inteligentes.",
-  "keywords": [
+  keywords: [
     "productividad en el trabajo",
     "herramientas digitales para equipos",
     "gestión de proyectos",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     "trabajo remoto",
     "optimización de equipos",
     "aplicaciones para la productividad laboral",
-    "gestión digital de equipos"
+    "gestión digital de equipos",
   ],
   authors: [{ name: "LideraTec", url: "https://lideratec.vercel.app" }],
   creator: "LideraTec",
@@ -129,32 +130,32 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              "mainEntity": [
+              mainEntity: [
                 {
                   "@type": "Question",
-                  "name": "¿Qué es LideraTec?",
-                  "acceptedAnswer": {
+                  name: "¿Qué es LideraTec?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "LideraTec es una plataforma digital que ayuda a equipos a mejorar su productividad con herramientas colaborativas."
-                  }
+                    text: "LideraTec es una plataforma digital que ayuda a equipos a mejorar su productividad con herramientas colaborativas.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "¿Dónde puedo descargar la app de LideraTec?",
-                  "acceptedAnswer": {
+                  name: "¿Dónde puedo descargar la app de LideraTec?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Puedes descargarla desde App Store y Google Play directamente desde nuestro sitio web."
-                  }
+                    text: "Puedes descargarla desde App Store y Google Play directamente desde nuestro sitio web.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "¿LideraTec tiene versión gratuita?",
-                  "acceptedAnswer": {
+                  name: "¿LideraTec tiene versión gratuita?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "Sí, ofrecemos una versión gratuita con funciones básicas y planes premium para necesidades avanzadas."
-                  }
-                }
-              ]
+                    text: "Sí, ofrecemos una versión gratuita con funciones básicas y planes premium para necesidades avanzadas.",
+                  },
+                },
+              ],
             }),
           }}
         />
