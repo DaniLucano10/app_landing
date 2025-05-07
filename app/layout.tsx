@@ -73,13 +73,14 @@ export default function RootLayout({
       <head>
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="0e29f843aab58e9f" />
+
         {/* GEO meta tags para Lima, Perú */}
         <meta name="geo.region" content="PE-LIM" />
         <meta name="geo.placename" content="Lima" />
         <meta name="geo.position" content="-12.0464;-77.0428" />
         <meta name="ICBM" content="-12.0464, -77.0428" />
 
-        {/* LocalBusiness JSON-LD structured data */}
+        {/* LocalBusiness structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -117,6 +118,43 @@ export default function RootLayout({
                   closes: "18:00",
                 },
               ],
+            }),
+          }}
+        />
+
+        {/* FAQPage structured data for GEO-IA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "¿Qué es LideraTec?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "LideraTec es una plataforma digital que ayuda a equipos a mejorar su productividad con herramientas colaborativas."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿Dónde puedo descargar la app de LideraTec?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Puedes descargarla desde App Store y Google Play directamente desde nuestro sitio web."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "¿LideraTec tiene versión gratuita?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, ofrecemos una versión gratuita con funciones básicas y planes premium para necesidades avanzadas."
+                  }
+                }
+              ]
             }),
           }}
         />
