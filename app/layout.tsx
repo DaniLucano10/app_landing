@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     "App Store",
     "Google Play",
   ],
-  authors: [{ name: "TuCompañía", url: "https://tudominio.com" }],
-  creator: "TuCompañía",
+  authors: [{ name: "LideraTec", url: "https://lideratec.vercel.app" }],
+  creator: "LideraTec",
   robots: {
     index: true,
     follow: true,
@@ -37,17 +37,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "TuCompañía | Herramientas de trabajo intuitivas",
+    title: "LideraTec | Herramientas de trabajo intuitivas",
     description:
       "Descubre la solución ideal para aumentar tu productividad diaria. Únete a miles de usuarios satisfechos.",
-    url: "https://tudominio.com",
-    siteName: "TuCompañía",
+    url: "https://lideratec.vercel.app",
+    siteName: "LideraTec",
     images: [
       {
-        url: "https://tudominio.com/images/og-image.jpg",
+        url: "https://lideratec.vercel.app/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Vista previa de la aplicación de TuCompañía",
+        alt: "Vista previa de la aplicación de LideraTec",
       },
     ],
     locale: "es_PE",
@@ -55,11 +55,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TuCompañía | Soluciones digitales",
+    title: "LideraTec | Soluciones digitales",
     description:
       "Optimiza tu flujo de trabajo con nuestra app intuitiva, rápida y flexible.",
     creator: "@TuTwitter",
-    images: ["https://tudominio.com/images/og-image.jpg"],
+    images: ["https://lideratec.vercel.app/images/og-image.jpg"],
   },
 };
 
@@ -87,9 +87,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "LideraTec",
-              image: "https://tudominio.com/logo.png",
-              "@id": "https://tudominio.com",
-              url: "https://tudominio.com",
+              image: "https://lideratec.vercel.app/logo.png",
+              "@id": "https://lideratec.vercel.app",
+              url: "https://lideratec.vercel.app",
               telephone: "+51 999 999 999",
               address: {
                 "@type": "PostalAddress",
