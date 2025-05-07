@@ -13,15 +13,15 @@ export const metadata: Metadata = {
   title: "LideraTec | Tu compañero digital para un espacio de trabajo eficiente",
   description:
     "LideraTec es tu solución integral para maximizar la productividad diaria. Descarga la app y transforma tu forma de trabajar con herramientas inteligentes.",
-  keywords: [
-    "productividad",
-    "aplicaciones",
-    "Next.js",
-    "landing page",
-    "trabajo en equipo",
-    "gestión digital",
-    "App Store",
-    "Google Play",
+  "keywords": [
+    "productividad en el trabajo",
+    "herramientas digitales para equipos",
+    "gestión de proyectos",
+    "aplicaciones de productividad",
+    "trabajo remoto",
+    "optimización de equipos",
+    "aplicaciones para la productividad laboral",
+    "gestión digital de equipos"
   ],
   authors: [{ name: "LideraTec", url: "https://lideratec.vercel.app" }],
   creator: "LideraTec",
