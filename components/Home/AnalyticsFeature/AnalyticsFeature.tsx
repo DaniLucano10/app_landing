@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const AnalyticsFeature = () => {
   return (
-    <div className="pt-24 pb-16">
+    <section id="acerca-de" className="pt-24 pb-16">
       {/* Define grid */}
       <div className="w-[95%] sm:w-[80%] mx-auto items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Image Content */}
@@ -15,7 +15,7 @@ const AnalyticsFeature = () => {
         >
           <Image
             src="/images/a.jpg"
-            alt="image"
+            alt="Análisis de audiencia con herramientas de seguimiento"
             width={500}
             height={500}
             className="object-contain"
@@ -23,19 +23,18 @@ const AnalyticsFeature = () => {
         </div>
         {/* Text content */}
         <div className="p-6">
-          <h1 className="text-base font-semibold text-orange-500">
+          <h2 className="text-base font-semibold text-orange-500">
             Seguimiento y análisis de audiencia
-          </h1>
-          <h2 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+          </h2>
+          <h3 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
             Potentes herramientas de análisis para rastrear el comportamiento y
             la interacción de los usuarios, proporcionando información para
             optimizar su estrategia de contenido.
-          </h2>
+          </h3>
           <p className="mt-4 text-gray-600 text-sm font-medium leading-[2rem]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi,
-            soluta adipisci odit quis aliquid tenetur deserunt iure, non fugit
-            expedita numquam tempora cupiditate nam. Dignissimos beatae
-            repellat.
+            Mejora la eficiencia de tu contenido con herramientas avanzadas para
+            entender el comportamiento del usuario, optimizando cada aspecto de
+            tu estrategia digital.
           </p>
           <ul className="mt-7 space-y-2 text-gray-800">
             <li className="flex items-center font-semibold">
@@ -44,19 +43,19 @@ const AnalyticsFeature = () => {
             </li>
             <li className="flex items-center font-semibold">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Disfrute de acceso ilimitado a todas las funciones
+              Acceso ilimitado a todas las funciones
             </li>
             <li className="flex items-center font-semibold">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Gestionar la conversación definitiva
+              Gestión completa de conversaciones
             </li>
           </ul>
           <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-blue-800 transition-all duration-200 hover:text-white">
-          Explora más &rarr;
+            Explora más &rarr;
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
