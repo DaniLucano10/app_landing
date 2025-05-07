@@ -26,15 +26,17 @@ const Nav = ({ openNav }: Props) => {
 
   return (
     <div
-      className={`fixed ${
-        navBg ? "bg-white shadow-md" : "fixed"
-      } w-full transition-all duration-200 h-[12vh] z-[1000]`}
+      className={`fixed bg-gray-200 ${navBg ? "bg-gray-200 shadow-md" : "fixed"
+        } w-full transition-all duration-200 h-[12vh] z-[1000]`}
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
-        <h1 className="text-xl md:text-3xl font-extrabold">
-          <span className="text-3xl md:text-4xl text-pink-700">A</span>ppify
-        </h1>
+        <Link href="/">
+          <h1 className="text-xl md:text-3xl font-extrabold cursor-pointer">
+            <span className="text-3xl md:text-4xl text-pink-700">L</span>ideraTec
+          </h1>
+        </Link>
+
         {/* NavLinks */}
         <div className="hidden md:flex items-center space-x-10">
           {navLinks.map((link) => {
