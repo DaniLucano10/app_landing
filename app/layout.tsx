@@ -71,6 +71,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="abc1234567890" />
         {/* GEO meta tags para Lima, Perú */}
         <meta name="geo.region" content="PE-LIM" />
         <meta name="geo.placename" content="Lima" />
