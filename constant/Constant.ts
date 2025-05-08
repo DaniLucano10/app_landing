@@ -33,7 +33,7 @@ export const navLinks = [
 
 export const cardsData = [
   {
-    image: "/images/i1.png",
+    image: "/images/i1.webp",
     alt: "Crear cuenta gratuita con LideraTec",
     title: "Crea tu cuenta gratuita y empieza hoy",
     linkText: "Comienza a ganar con nuestra app",
@@ -41,7 +41,7 @@ export const cardsData = [
     linkUrl: "https://www.lideratec.com/signup",
   },
   {
-    image: "/images/i2.png",
+    image: "/images/i2.webp",
     alt: "Monitoreo de análisis de usuario",
     title: "Monitorea el análisis de usuarios de manera intuitiva",
     linkText: "Registra tu tienda y controla el rendimiento",
@@ -49,7 +49,7 @@ export const cardsData = [
     linkUrl: "https://www.lideratec.com/analytics",
   },
   {
-    image: "/images/i3.png",
+    image: "/images/i3.webp",
     alt: "Seguro y confiable",
     title: "Seguridad garantizada",
     linkText: "Obtén la aplicación y disfruta de tranquilidad",
@@ -57,7 +57,7 @@ export const cardsData = [
     linkUrl: "https://www.lideratec.com/security",
   },
   {
-    image: "/images/i4.png",
+    image: "/images/i4.webp",
     alt: "Atención al cliente rápida",
     title: "Soporte al cliente excepcional",
     linkText: "Obtén ayuda en tiempo real",
