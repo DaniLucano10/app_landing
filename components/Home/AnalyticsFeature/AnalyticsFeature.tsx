@@ -23,7 +23,7 @@ const AnalyticsFeature = () => {
         </div>
         {/* Text content */}
         <div className="p-6">
-          <h2 className="text-base font-semibold text-orange-500">
+          <h2 className="text-base font-semibold text-orange-700">
             Seguimiento y análisis de audiencia
           </h2>
           <h3 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">

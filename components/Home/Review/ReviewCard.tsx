@@ -26,7 +26,7 @@ const ReviewCard = ({ image, name, role, testimonial }: Props) => {
             ))}
           </div>
 
-          <h3 className="text-xl font-semibold mt-8">{name}</h3>
+          <h2 className="text-xl font-semibold mt-8">{name}</h2>
           <p className="mt-2 text-lg text-gray-600 font-medium mb-6">{role}</p>
         </div>
 

@@ -23,7 +23,7 @@ const Offer = () => {
 
         <a
           href="#planes"
-          className="inline-block bg-blue-500 text-white py-3 px-8 rounded-full text-lg font-medium mb-4 hover:bg-blue-600 transition"
+          className="inline-block bg-blue-800 text-white py-3 px-8 rounded-full text-lg font-medium mb-4 hover:bg-blue-600 transition"
           role="button"
           aria-label="Comenzar prueba gratuita de 14 días"
         >

@@ -23,7 +23,7 @@ const Footer = () => {
 
           {/* About us links */}
           <div>
-            <h3 className='text-lg font-semibold text-gray-800'>About Us</h3>
+            <h2 className='text-lg font-semibold text-gray-800'>Sobre Nosotros</h2>
             <ul className='mt-4 space-y-4 text-sm font-semibold text-gray-500'>
               <li>Centro de soporte</li>
               <li>Atención al cliente</li>
@@ -35,7 +35,7 @@ const Footer = () => {
 
           {/* Our information links */}   
           <div>
-            <h3 className='text-lg font-semibold text-gray-800'>Our Information</h3>
+            <h3 className='text-lg font-semibold text-gray-800'>Nuestra información</h3>
             <ul className='mt-4 space-y-4 text-sm font-semibold text-gray-500'>
               <li>Política de devoluciones</li>
               <li>Política de privacidad </li>
@@ -47,7 +47,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className='text-lg font-semibold text-gray-800'>Contact Info</h3>
+            <h3 className='text-lg font-semibold text-gray-800'>Información de contacto</h3>
             <ul className='mt-4 space-y-4 text-sm font-semibold text-gray-500'>
               <li className='flex items-center'>
                 <FaMapMarkedAlt className='mr-2' />
