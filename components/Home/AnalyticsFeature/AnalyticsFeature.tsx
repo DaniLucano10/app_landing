@@ -14,7 +14,7 @@ const AnalyticsFeature = () => {
           data-aos-delay="100"
         >
           <Image
-            src="/images/a.jpg"
+            src="/images/a.webp"
             alt="Análisis de audiencia con herramientas de seguimiento"
             width={500}
             height={500}

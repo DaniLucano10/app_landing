@@ -13,14 +13,14 @@ const responsive = {
 const testimonials = [
   {
     name: "Ana Torres",
-    image: "/images/c1.png",
+    image: "/images/c1.webp",
     role: "Diseñadora UX/UI",
     testimonial:
       "Este producto superó mis expectativas. La experiencia de usuario ha sido increíble desde el primer momento.",
   },
   {
     name: "Carlos Ramírez",
-    image: "/images/c2.png",
+    image: "/images/c2.webp",
     role: "Desarrollador Backend",
     testimonial:
       "El soporte técnico fue rápido y eficiente. Realmente me ayudaron a resolver todos mis problemas.",

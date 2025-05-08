@@ -48,7 +48,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/images/gp.png"
+                  src="/images/gp.webp"
                   alt="Descargar desde Google Play"
                   width={150}
                   height={150}
@@ -61,7 +61,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/images/as.png"
+                  src="/images/as.webp"
                   alt="Descargar desde App Store"
                   width={150}
                   height={150}
@@ -79,11 +79,13 @@ const Hero = () => {
             aria-hidden="true"
           >
             <Image
-              src="/images/hero.png"
+              src="/images/hero.webp"
               alt="Ilustración de la plataforma en uso"
               width={700}
               height={700}
               priority
+              quality={75}
+              sizes="(max-width: 768px) 100vw, 700px"
             />
           </div>
         </div>
