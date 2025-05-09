@@ -18,8 +18,12 @@ const AnalyticsFeature = () => {
             alt="Análisis de audiencia con herramientas de seguimiento"
             width={500}
             height={500}
+            loading="lazy"
+            quality={75}
             className="object-contain"
+            sizes="(max-width: 768px) 100vw, 500px"
           />
+
         </div>
         {/* Text content */}
         <div className="p-6">
