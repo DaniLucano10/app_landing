@@ -1,16 +1,12 @@
+// useCountries hook
+
 import { useEffect, useState } from "react";
 
+// Interfaz para representar los países en el frontend
 export interface Country {
   name: string;
   dialCode: string;
   flag: string;
-}
-
-interface RawCountry {
-  name: { common: string };
-  translations?: { spa?: { common: string } };
-  idd?: { root?: string; suffixes?: string[] };
-  cca2?: string;
 }
 
 const useCountries = () => {
@@ -20,44 +16,38 @@ const useCountries = () => {
 
   useEffect(() => {
     const fetchCountries = async () => {
-      if (countries.length > 0) return; // Evitar múltiples llamadas innecesarias
+      // Evitar llamadas innecesarias si los países ya están cargados
+      if (countries.length > 0) return;
 
+      // Intentar obtener los países desde el almacenamiento en caché del navegador (sessionStorage)
       const cachedCountries = sessionStorage.getItem("countries");
       if (cachedCountries) {
         setCountries(JSON.parse(cachedCountries));
-        setLoading(false); // Ya que se carga desde el almacenamiento en caché
+        setLoading(false); // Si los datos están en caché, marcar como cargado
         return;
       }
 
       try {
-        const response = await fetch("https://restcountries.com/v3.1/all");
-        const data: RawCountry[] = await response.json();
+        // Hacer la solicitud a la API interna de Next.js
+        const response = await fetch("/api/countries");
+        if (!response.ok) {
+          throw new Error("Failed to fetch countries");
+        }
 
-        const formattedCountries: Country[] = data
-          .map((country) => ({
-            name: country.translations?.spa?.common || country.name.common,
-            dialCode:
-              country.idd?.root && country.idd.suffixes
-                ? `${country.idd.root}${country.idd.suffixes[0]}`
-                : "",
-            flag: country.cca2
-              ? `https://flagcdn.com/w40/${country.cca2.toLowerCase()}.png`
-              : "",
-          }))
-          .filter((c) => c.dialCode);
+        const data: Country[] = await response.json();
 
-        setCountries(formattedCountries);
-        sessionStorage.setItem("countries", JSON.stringify(formattedCountries));
+        setCountries(data); // Guardar los países obtenidos
+        sessionStorage.setItem("countries", JSON.stringify(data)); // Guardar los países en caché para futuras peticiones
       } catch (error) {
-        console.error("Error fetching country data:", error);
+        console.error("Error fetching country data:", error); // Manejo de error
         setError(true);
       } finally {
-        setLoading(false);
+        setLoading(false); // Finalizar el proceso de carga
       }
     };
 
-    fetchCountries();
-  }, [countries]); 
+    fetchCountries(); // Llamar a la función para obtener los países
+  }, [countries]); // El efecto solo se ejecuta una vez
 
   return { countries, isLoading: loading, error };
 };
