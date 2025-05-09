@@ -25,9 +25,3 @@
     scroll-behavior: smooth;
   }
 }
-@font-face {
-  font-family: 'revicons';
-  src: url('/media/revicons.ff59b316.woff') format('woff');
-  font-display: swap;
-}
-
