@@ -57,7 +57,7 @@ const useCountries = () => {
     };
 
     fetchCountries();
-  }, [countries]); // Dependencia de `countries` para evitar múltiples llamados
+  }, [countries]); 
 
   return { countries, isLoading: loading, error };
 };
