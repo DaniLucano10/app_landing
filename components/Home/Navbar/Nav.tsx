@@ -51,7 +51,7 @@ const Nav = ({ openNav }: Props) => {
         <div className="flex items-center space-x-4">
           <Link href="/register">
             <button
-              className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-blue-700
+              className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-blue-700 cursor-pointer
                hover:bg-blue-900 transition-all duration-200 rounded-full"
             >
               Unirte ahora
