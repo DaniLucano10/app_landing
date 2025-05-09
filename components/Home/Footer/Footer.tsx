@@ -10,11 +10,11 @@ const Footer = () => {
           {/* Logo and description */}
           <div>
             {/* logo */}
-            <h1 className='text-xl md:text-3xl font-extrabold'>
-              <span className='text-3xl md:text-4xl text-pink-700'>
-                L
-              </span>ideraTec
-            </h1>
+            <Link href="/">
+              <h1 className="text-xl md:text-3xl font-extrabold cursor-pointer">
+                <span className="text-3xl md:text-4xl text-pink-700">L</span>ideraTec
+              </h1>
+            </Link>
             {/* Description */}
             <p className='mt-4 text-sm font-medium leading-[2rem] w-[80%] text-gray-600'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, placeat!
@@ -33,7 +33,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Our information links */}   
+          {/* Our information links */}
           <div>
             <h3 className='text-lg font-semibold text-gray-800'>Nuestra información</h3>
             <ul className='mt-4 space-y-4 text-sm font-semibold text-gray-500'>
