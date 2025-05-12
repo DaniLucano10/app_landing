@@ -15,7 +15,6 @@ const Offer = () => {
 
   return (
     <section
-      id="contacto"
       className="flex flex-col md:flex-row items-center justify-center pt-10 pb-10 mb-20 bg-black px-4"
       aria-labelledby="offer-heading"
     >

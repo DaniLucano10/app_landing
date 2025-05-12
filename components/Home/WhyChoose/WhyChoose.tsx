@@ -4,7 +4,7 @@ import { cardsData } from "@/constant/Constant";
 
 const WhyChoose = () => {
   return (
-    <section id="acerca-de" className="pt-16 pb-16">
+    <section className="pt-16 pb-16">
       <h2 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
         ¿Por qué elegir LideraTec para tu productividad diaria?
       </h2>

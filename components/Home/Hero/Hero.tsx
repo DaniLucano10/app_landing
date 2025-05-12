@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section
-      id="inicio"
+      id=""
       aria-labelledby="hero-heading"
       className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#f7f6fb]"
     >

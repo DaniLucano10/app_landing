@@ -29,7 +29,7 @@ const testimonials = [
 
 const Review = () => {
   return (
-    <section id="testimonios" className="pt-16 pb-16 bg-[#fcf6fa]">
+    <section  className="pt-16 pb-16 bg-[#fcf6fa]">
       <h1 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
         Lo que dicen nuestros clientes sobre nosotros
       </h1>

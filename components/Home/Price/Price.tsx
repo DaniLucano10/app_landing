@@ -3,7 +3,7 @@ import PriceCard from "./PriceCard";
 
 const Price = () => {
   return (
-    <section id="planes" className="pt-16 pb-16 bg-[#edfbff]">
+    <section className="pt-16 pb-16 bg-[#edfbff]">
       <h2 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
         Conozca emocionantes planes de precios
       </h2>
