@@ -2,8 +2,8 @@
 
 const AboutPage = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-            <section className="max-w-4xl mx-auto p-6">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 p-24">
+            <section className="max-w-4xl p-6">
                 <h1 className="text-4xl font-bold text-gray-800 mb-6">Sobre Nosotros</h1>
 
                 <p className="text-lg text-gray-600">

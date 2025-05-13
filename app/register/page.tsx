@@ -18,7 +18,7 @@ const RegisterPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       {/* Formulario */}
-      <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 w-full max-w-md">
+      <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 w-full max-w-md ">
         <form className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">

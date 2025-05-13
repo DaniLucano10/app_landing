@@ -60,8 +60,8 @@ export default function FAQ() {
 
 
   return (
-    <section className="max-w-4xl mx-auto p-6">
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">Preguntas Frecuentes</h1>
+    <section className="max-w-4xl mx-auto p-6 pt-32">
+      <h1 className="text-2xl font-bold text-gray-800 mb-6 ">Preguntas Frecuentes</h1>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b pb-4">

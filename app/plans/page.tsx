@@ -2,7 +2,7 @@
 
 const page = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 pt-18 md:pt-0">
             <section className="max-w-5xl mx-auto p-6">
                 <h1 className="text-4xl font-bold text-gray-800 mb-6">Nuestros Planes</h1>
                 <p className="text-lg text-gray-600 mb-8">
